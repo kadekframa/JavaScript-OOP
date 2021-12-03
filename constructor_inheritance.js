@@ -6,8 +6,9 @@
 
 // Contoh penggunaan.
 
-function Employee(firstName){
+function Employee(firstName, lastName){
     this.firstName = firstName;
+    this.lastName = lastName;
     this.sayello = function(name){
         console.info(`Hi ${name}, my name is ${this.firstName}`);
     }
@@ -15,12 +16,12 @@ function Employee(firstName){
 
 
 function Manager(firstName, lastName){
-    Employee.call(this, firstName);         // contoh cara untuk memanggil constructor lain.
-    this.lastName = lastName;
+    Employee.call(this, firstName, lastName);         // contoh cara untuk memanggil constructor lain.
+    // this.lastName = lastName;
 
 }
 
-const kadek = new Manager("Kadek", "Frama");
+const kadek = new Manager("Kadek", "Tetap Semangat");
 console.info(kadek);
 
 
