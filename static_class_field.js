@@ -9,3 +9,13 @@
 // Static class field bisa diartikan sifatnya global, tidak peduli diakses dimana atau siapa yang mengakses, hasilnya akan sama.
 
 // Contoh penggunaan static field.
+class Configuration{
+    static name = "Belajar JavaScript OOP";
+    static version = 1.0;
+    static author = "Kadek Frama";
+}
+
+const config = new Configuration();
+console.info(config);
+
+console.info(Configuration.name);           // cara mengakses static field. Yaitu namaClass.namaField (Configuration.name, Configuration.version, Configuration.author).
