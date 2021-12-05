@@ -17,5 +17,19 @@ class Configuration{
 
 const config = new Configuration();
 console.info(config);
+console.info("");
 
-console.info(Configuration.name);           // cara mengakses static field. Yaitu namaClass.namaField (Configuration.name, Configuration.version, Configuration.author).
+console.info(Configuration.name);       // cara mengakses static field. Yaitu namaClass.namaField (Configuration.name, Configuration.version, Configuration.author).
+console.info(Configuration.version);        
+console.info(Configuration.author);
+
+Configuration.version = 2.4;            // cara mengubah value pada static field.
+console.info("")
+console.info(Configuration.version)     // mengakses static field nya.
+
+
+
+
+
+// TETAP SEMANGAT BERLATIH JAVASCRIPT!!!
+// SEMANGAT MERAIH IMPIAN, PANTANG MENYERAH !!!
